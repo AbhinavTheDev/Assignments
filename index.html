@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <main>
+      <div class="UserName">
+        <label for="text-input">Enter Your Github Username</label>
+        <br />
+        <input
+          class="input"
+          id="usernameInput"
+          type="text"
+          placeholder="e.g. abhinavthedev"
+        /><br />
+        <button id="submitButton">Submit</button>
+      </div>
+      <div class="profile-card">
+        <div id="img"></div>
+        <h1>Your Name</h1>
+        <p id="bio">Your Bio</p>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com"
+              ><!--Yha par bas Github ka logo hai svg format me, src ke under --><img
+                style="width: 100%"
+                alt="svgImg"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik00MSwyNGMwLDkuNC03LjYsMTctMTcsMTdTNywzMy40LDcsMjRTMTQuNiw3LDI0LDdTNDEsMTQuNiw0MSwyNHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjNDU1YTY0IiBkPSJNMjEgNDF2LTUuNWMwLS4zLjItLjUuNS0uNXMuNS4yLjUuNVY0MWgydi02LjVjMC0uMy4yLS41LjUtLjVzLjUuMi41LjVWNDFoMnYtNS41YzAtLjMuMi0uNS41LS41cy41LjIuNS41VjQxaDEuOGMuMi0uMy4yLS42LjItMS4xVjM2YzAtMi4yLTEuOS01LjItNC4zLTUuMmgtMi41Yy0yLjMgMC00LjMgMy4xLTQuMyA1LjJ2My45YzAgLjQuMS44LjIgMS4xTDIxIDQxIDIxIDQxek00MC4xIDI2LjRDNDAuMSAyNi40IDQwLjEgMjYuNCA0MC4xIDI2LjRjMCAwLTEuMy0uNC0yLjQtLjQgMCAwLS4xIDAtLjEgMC0xLjEgMC0yLjkuMy0yLjkuMy0uMSAwLS4xIDAtLjEtLjEgMC0uMSAwLS4xLjEtLjEuMSAwIDItLjMgMy4xLS4zIDEuMSAwIDIuNC40IDIuNS40LjEgMCAuMS4xLjEuMkM0MC4yIDI2LjMgNDAuMiAyNi40IDQwLjEgMjYuNHpNMzkuOCAyNy4yQzM5LjggMjcuMiAzOS44IDI3LjIgMzkuOCAyNy4yYzAgMC0xLjQtLjQtMi42LS40LS45IDAtMyAuMi0zLjEuMi0uMSAwLS4xIDAtLjEtLjEgMC0uMSAwLS4xLjEtLjEuMSAwIDIuMi0uMiAzLjEtLjIgMS4zIDAgMi42LjQgMi42LjQuMSAwIC4xLjEuMS4yQzM5LjkgMjcuMSAzOS45IDI3LjIgMzkuOCAyNy4yek03LjggMjYuNGMtLjEgMC0uMSAwLS4xLS4xIDAtLjEgMC0uMS4xLS4yLjgtLjIgMi40LS41IDMuMy0uNS44IDAgMy41LjIgMy42LjIuMSAwIC4xLjEuMS4xIDAgLjEtLjEuMS0uMS4xIDAgMC0yLjctLjItMy41LS4yQzEwLjEgMjYgOC42IDI2LjIgNy44IDI2LjQgNy44IDI2LjQgNy44IDI2LjQgNy44IDI2LjR6TTguMiAyNy45YzAgMC0uMSAwLS4xLS4xIDAtLjEgMC0uMSAwLS4yLjEgMCAxLjQtLjggMi45LTEgMS4zLS4yIDQgLjEgNC4yLjEuMSAwIC4xLjEuMS4xIDAgLjEtLjEuMS0uMS4xIDAgMCAwIDAgMCAwIDAgMC0yLjgtLjMtNC4xLS4xQzkuNiAyNy4xIDguMiAyNy45IDguMiAyNy45IDguMiAyNy45IDguMiAyNy45IDguMiAyNy45eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiM0NTVhNjQiIGQ9Ik0xNC4yLDIzLjVjMC00LjQsNC42LTguNSwxMC4zLTguNWM1LjcsMCwxMC4zLDQsMTAuMyw4LjVTMzEuNSwzMSwyNC41LDMxUzE0LjIsMjcuOSwxNC4yLDIzLjV6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzQ1NWE2NCIgZD0iTTI4LjYgMTYuM2MwIDAgMS43LTIuMyA0LjgtMi4zIDEuMiAxLjIuNCA0LjggMCA1LjhMMjguNiAxNi4zek0yMC40IDE2LjNjMCAwLTEuNy0yLjMtNC44LTIuMy0xLjIgMS4yLS40IDQuOCAwIDUuOEwyMC40IDE2LjN6TTIwLjEgMzUuOWMwIDAtMi4zIDAtMi44IDAtMS4yIDAtMi4zLS41LTIuOC0xLjUtLjYtMS4xLTEuMS0yLjMtMi42LTMuMy0uMy0uMi0uMS0uNC40LS40LjUuMSAxLjQuMiAyLjEgMS4xLjcuOSAxLjUgMiAyLjggMiAxLjMgMCAyLjcgMCAzLjUtLjlMMjAuMSAzNS45eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMGJjZDQiIGQ9Ik0yNCw0QzEzLDQsNCwxMyw0LDI0czksMjAsMjAsMjBzMjAtOSwyMC0yMFMzNSw0LDI0LDR6IE0yNCw0MGMtOC44LDAtMTYtNy4yLTE2LTE2UzE1LjIsOCwyNCw4IHMxNiw3LjIsMTYsMTZTMzIuOCw0MCwyNCw0MHoiPjwvcGF0aD4KPC9zdmc+"
+            /></a>
+          </li>
+          <!-- Add more social links here -->
+        </ul>
+        <h3 class="followers">Followers: <span id="followers-count"></span></h3>
+        
+        <button id="info">Fetch Your Info</button>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
