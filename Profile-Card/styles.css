@@ -1,12 +1,16 @@
+body {
+  background: url(https://source.unsplash.com/NKNVoto5Uzw) no-repeat;
+  /* For Keeping the inherited background full size. */
+  background-attachment: fixed;
+  background-size: cover;
+}
 main {
   font-family: Georgia, serif;
-  display: grid;
-  grid-template-rows: 150px 1fr;
-  place-items: center;
+  display: flex;
   height: 100vh;
 }
 .UserName {
-  background-color: rgb(161, 182, 252);
+  /* background-color: rgb(161, 182, 252); */
   width: 90%;
   max-width: 400px;
   margin: auto;
@@ -15,17 +19,19 @@ main {
   border-radius: 5px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(12, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
 .profile-card {
-  background-color: rgba(154, 255, 238, 0.788);
+  /* background-color: rgba(154, 255, 238, 0.788); */
   width: 90%;
   max-width: 400px;
   margin: auto;
   padding: 20px;
-  border: 2px solid rgb(182, 169, 169);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(15, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
 label {
   margin: auto;
@@ -46,7 +52,7 @@ h1 {
 
 p {
   font-size: 1rem;
-  color: #777;
+  color: rgb(31, 1, 141);
 }
 
 .social-links {
